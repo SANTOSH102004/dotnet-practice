@@ -1,0 +1,110 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+/* Custom enhancements for ProductManagementApp */
+
+/* Product Table Styling */
+.table {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  overflow: hidden;
+}
+.table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1b6ec2;
+}
+.table td, .table th {
+  vertical-align: middle;
+}
+.table tr:hover {
+  background: #f1f7ff;
+}
+
+/* Form Styling */
+form {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  max-width: 400px;
+  margin: 2rem auto;
+}
+form label {
+  font-weight: 500;
+  color: #1b6ec2;
+}
+form input[type="text"],
+form input[type="number"] {
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+form button[type="submit"] {
+  background: #1b6ec2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+form button[type="submit"]:hover {
+  background: #155a9c;
+}
+
+/* Add New Product Button */
+.btn-primary {
+  background: linear-gradient(90deg, #1b6ec2 0%, #258cfb 100%);
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(27,110,194,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.btn-primary:hover {
+  background: linear-gradient(90deg, #155a9c 0%, #1b6ec2 100%);
+  box-shadow: 0 4px 12px rgba(27,110,194,0.12);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  form {
+    padding: 1rem;
+    max-width: 100%;
+  }
+  .table {
+    font-size: 0.95rem;
+  }
+}
