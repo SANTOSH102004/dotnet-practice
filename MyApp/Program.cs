@@ -5,7 +5,12 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Enter a number:");
-        string input = Console.ReadLine();
+        string? input = Console.ReadLine();
+        if (string.IsNullOrEmpty(input))
+        {
+            Console.WriteLine("No input provided.");
+            return;
+        }
 
         int number;
         if (int.TryParse(input, out number))
