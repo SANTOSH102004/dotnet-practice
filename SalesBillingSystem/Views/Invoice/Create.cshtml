@@ -1,0 +1,62 @@
+@model SalesBillingSystem.Models.Invoice
+@{
+    ViewData["Title"] = "Create Invoice";
+    var customers = ViewBag.Customers as List<SalesBillingSystem.Models.Customer> ?? new List<SalesBillingSystem.Models.Customer>();
+    var products = ViewBag.Products as List<SalesBillingSystem.Models.Product> ?? new List<SalesBillingSystem.Models.Product>();
+}
+<h2>Create Invoice</h2>
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="CustomerId">Customer</label>
+        <select name="CustomerId" class="form-control" required>
+            <option value="">-- Select Customer --</option>
+            @foreach (var customer in customers)
+            {
+                <option value="@customer.Id">@customer.Name</option>
+            }
+        </select>
+    </div>
+    <h4>Products</h4>
+    <div id="products-list">
+        <div class="form-row mb-2">
+            <div class="col">
+                <select name="productIds" class="form-control" required>
+                    <option value="">-- Select Product --</option>
+                    @foreach (var product in products)
+                    {
+                        <option value="@product.Id">@product.Name (@product.Price)</option>
+                    }
+                </select>
+            </div>
+            <div class="col">
+                <input type="number" name="quantities" class="form-control" placeholder="Quantity" min="1" value="1" required />
+            </div>
+            <div class="col-auto">
+                <button type="button" class="btn btn-danger remove-product">Remove</button>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-secondary mb-3" id="add-product">Add Another Product</button>
+    <br />
+    <button type="submit" class="btn btn-primary">Create Invoice</button>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</form>
+@section Scripts {
+    <script>
+        document.getElementById('add-product').onclick = function () {
+            var productsList = document.getElementById('products-list');
+            var firstRow = productsList.children[0];
+            var newRow = firstRow.cloneNode(true);
+            newRow.querySelector('select').selectedIndex = 0;
+            newRow.querySelector('input').value = 1;
+            productsList.appendChild(newRow);
+        };
+        document.getElementById('products-list').addEventListener('click', function (e) {
+            if (e.target.classList.contains('remove-product')) {
+                if (document.querySelectorAll('#products-list .form-row').length > 1) {
+                    e.target.closest('.form-row').remove();
+                }
+            }
+        });
+    </script>
+}
