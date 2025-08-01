@@ -1,0 +1,15 @@
+C:\Users\Admin\Dot net\BankingSystem\obj\Debug\net9.0\BankingSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Dot net\BankingSystem\obj\Debug\net9.0\BankingSystem.AssemblyInfoInputs.cache
+C:\Users\Admin\Dot net\BankingSystem\obj\Debug\net9.0\BankingSystem.AssemblyInfo.cs
+C:\Users\Admin\Dot net\BankingSystem\obj\Debug\net9.0\BankingSystem.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Dot net\BankingSystem\obj\Debug\net9.0\BankingSystem.sourcelink.json
+C:\Users\Admin\Dot net\BankingSystem\bin\Debug\net9.0\BankingSystem.exe
+C:\Users\Admin\Dot net\BankingSystem\bin\Debug\net9.0\BankingSystem.deps.json
+C:\Users\Admin\Dot net\BankingSystem\bin\Debug\net9.0\BankingSystem.runtimeconfig.json
+C:\Users\Admin\Dot net\BankingSystem\bin\Debug\net9.0\BankingSystem.dll
+C:\Users\Admin\Dot net\BankingSystem\bin\Debug\net9.0\BankingSystem.pdb
+C:\Users\Admin\Dot net\BankingSystem\obj\Debug\net9.0\BankingSystem.dll
+C:\Users\Admin\Dot net\BankingSystem\obj\Debug\net9.0\refint\BankingSystem.dll
+C:\Users\Admin\Dot net\BankingSystem\obj\Debug\net9.0\BankingSystem.pdb
+C:\Users\Admin\Dot net\BankingSystem\obj\Debug\net9.0\BankingSystem.genruntimeconfig.cache
+C:\Users\Admin\Dot net\BankingSystem\obj\Debug\net9.0\ref\BankingSystem.dll
