@@ -1,0 +1,15 @@
+C:\Users\Admin\Dot net\AtmSystem\bin\Debug\net9.0\AtmSystem.exe
+C:\Users\Admin\Dot net\AtmSystem\bin\Debug\net9.0\AtmSystem.deps.json
+C:\Users\Admin\Dot net\AtmSystem\bin\Debug\net9.0\AtmSystem.runtimeconfig.json
+C:\Users\Admin\Dot net\AtmSystem\bin\Debug\net9.0\AtmSystem.dll
+C:\Users\Admin\Dot net\AtmSystem\bin\Debug\net9.0\AtmSystem.pdb
+C:\Users\Admin\Dot net\AtmSystem\obj\Debug\net9.0\AtmSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Dot net\AtmSystem\obj\Debug\net9.0\AtmSystem.AssemblyInfoInputs.cache
+C:\Users\Admin\Dot net\AtmSystem\obj\Debug\net9.0\AtmSystem.AssemblyInfo.cs
+C:\Users\Admin\Dot net\AtmSystem\obj\Debug\net9.0\AtmSystem.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Dot net\AtmSystem\obj\Debug\net9.0\AtmSystem.sourcelink.json
+C:\Users\Admin\Dot net\AtmSystem\obj\Debug\net9.0\AtmSystem.dll
+C:\Users\Admin\Dot net\AtmSystem\obj\Debug\net9.0\refint\AtmSystem.dll
+C:\Users\Admin\Dot net\AtmSystem\obj\Debug\net9.0\AtmSystem.pdb
+C:\Users\Admin\Dot net\AtmSystem\obj\Debug\net9.0\AtmSystem.genruntimeconfig.cache
+C:\Users\Admin\Dot net\AtmSystem\obj\Debug\net9.0\ref\AtmSystem.dll
