@@ -1,38 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import ProductList from './components/ProductList';
+import './App.css';
 
 function App() {
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    fetch('/api/products')
-      .then(response => response.json())
-      .then(data => {
-        setProducts(data);
-        setLoading(false);
-      })
-      .catch(error => {
-        console.error('Error fetching products:', error);
-        setLoading(false);
-      });
-  }, []);
-
-  if (loading) {
-    return <div className="loading">Loading products...</div>;
-  }
-
   return (
-    <div className="container">
-      <h1>Products List</h1>
-      <div className="products-grid">
-        {products.map(product => (
-          <div key={product.id} className="product-card">
-            <h3>{product.name}</h3>
-            <p className="price">${product.price}</p>
-            <p className="category">{product.category}</p>
-          </div>
-        ))}
-      </div>
+    <div className="app">
+      <header className="app-header">
+        <div className="container">
+          <h1>ReactMVC Product Management</h1>
+          <p>A modern React + ASP.NET Core MVC application</p>
+        </div>
+      </header>
+      
+      <main className="app-main">
+        <div className="container">
+          <ProductList />
+        </div>
+      </main>
+      
+      <footer className="app-footer">
+        <div className="container">
+          <p>&copy; 2025 ReactMVC App. Built with React and ASP.NET Core.</p>
+        </div>
+      </footer>
     </div>
   );
 }
