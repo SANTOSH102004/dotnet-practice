@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ProductCard from './ProductCard';
 import ProductForm from './ProductForm';
+import Dashboard from './Dashboard';
 import './ProductList.css';
 
 const ProductList = () => {
@@ -126,6 +127,8 @@ const ProductList = () => {
 
   return (
     <div className="product-list-container">
+      <Dashboard products={products} />
+      
       <div className="header">
         <h1>Product Management</h1>
         <button 

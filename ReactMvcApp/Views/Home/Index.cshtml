@@ -1,8 +1,14 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+@{
+    ViewData["Title"] = "Product Management";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div id="react-app">
+    <!-- React app will be mounted here -->
+    <div class="loading-fallback">
+        <p>Loading React application...</p>
+    </div>
 </div>
+
+@section Scripts {
+    <script src="~/dist/bundle.js"></script>
+}
